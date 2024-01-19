@@ -1,10 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Job Application Form Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -13,7 +19,7 @@ header {
 }
 
 form {
-    background-color: #90EE90;
+    background-color: #FFA500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2em auto;
     padding: 2em;
@@ -43,4 +49,92 @@ button {
 
 .submitted-container {
     text-align: center;
+}
+
+/* Amazon-like Page Styles */
+header {
+    background-color: #232f3e;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav {
+    background-color: #232f3e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #232f3e;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Additional styles for specific elements or pages */
+#jobDescription {
+    line-height: 1.6;
+}
+
+#jobDescription h3 {
+    color: #ff9900;
+}
+
+#jobDescription ul {
+    margin-left: 20px;
+}
+
+#jobDescription p {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
 }
